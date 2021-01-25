@@ -1,0 +1,15 @@
+name: Test - Workflow Run
+
+on:
+  workflow_run:
+    workflows: ["Test - Base Workflow"]
+    types:
+      - completed
+
+jobs:
+  test_workflow_run:
+    runs-on: [self-hosted, ansible]
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: echo ${{ github.event.workflow_run.head_branch }}
