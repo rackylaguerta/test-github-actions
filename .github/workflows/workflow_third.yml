@@ -10,7 +10,7 @@ on:
 
 jobs:
   test_workflow_run:
-    if: github.event.workflow_run.head_branch == 'master'
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_branch == 'master'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
