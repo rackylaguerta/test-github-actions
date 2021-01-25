@@ -8,7 +8,7 @@ on:
 
 jobs:
   test_workflow_run:
-    runs-on: [self-hosted, ansible]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
