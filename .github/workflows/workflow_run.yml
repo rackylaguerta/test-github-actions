@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2 
 
-      - run: echo ${{ github.event.workflow_run.head_branch }}
+      - run: echo ${{ github.event.workflow_run.head_branch }} 
