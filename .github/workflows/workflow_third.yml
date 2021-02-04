@@ -1,9 +1,19 @@
 name: Test - Third Workflow
 
 on:
+  workflow_dispatch:
+    inputs:
+      nodejs_git_branch:
+        description: NodeJS git branch
+        default: ''
+        required: true
+      playbook_tags:
+        description: limit playbook execution to the following tags
+        default: ''
+        required: false
   workflow_run:
     workflows: ["Test - Workflow Run"]
-    branches: ['master']
+    branches: ['dev']
     types:
       - completed
 
