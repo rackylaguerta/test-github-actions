@@ -9,7 +9,7 @@ on:
         required: true
       playbook_tags:
         description: limit playbook execution to the following tags
-        default: ''
+        default: ' '
         required: false
   workflow_run:
     workflows: ["Test - Workflow Run"]
