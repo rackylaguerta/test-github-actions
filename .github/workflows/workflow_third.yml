@@ -3,7 +3,7 @@ name: Test - Third Workflow
 on:
   workflow_run:
     workflows: ["Test - Workflow Run"]
-    branches: ["dev"]
+    branches: ['master']
     types:
       - completed
 
