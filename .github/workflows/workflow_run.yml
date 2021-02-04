@@ -1,10 +1,9 @@
 name: Test - Workflow Run
 
 on:
-  workflow_dispatch:
   workflow_run:
     workflows: ["Test - Base Workflow"]
-    branches: ["master"]
+    branches: ["master", "rc"]
     types:
       - completed
 

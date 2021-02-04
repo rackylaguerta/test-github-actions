@@ -2,6 +2,10 @@ name: Test - Base Workflow
 
 on:
   push:
+    branches:
+      - master
+      - rc
+      - dev
 
 jobs:
   base_workflow:
