@@ -1,0 +1,8 @@
+name: Base
+
+on: push
+jobs:
+  base_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
