@@ -17,3 +17,15 @@ jobs:
           echo "test=test" >> $GITHUB_ENV
       - name: echo env var
         run: echo ${{ env.test }}
+        
+      - name: SET ENV VAR
+
+        run: |
+
+          echo "test=update" >> $GITHUB_ENV
+
+      - name: echo env var
+
+        run: echo ${{ env.test }}
+        
+        
